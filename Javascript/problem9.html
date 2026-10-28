@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 9</title>
+    </head>
+    <body>
+        <h1>Number checker</h1>
+        <form>
+        <label for="num">Enter a Number: </label>
+        <input type="number" id="num" placeholder="Enter a number">
+        <br>
+ <button type="button"onclick="check()">Submit</button>
+        </form>
+        <p id="result"></p>
+        <script>
+           function check(){
+            let a = document.getElementById("num").value;
+            let message1;
+            let message2;
+            if(a>0){
+                message1="Positive";
+            }else if(a<0){
+                message1="Negative";
+            }else{
+                message1="Zero";
+            }
+
+            if(a%2==0){
+                message2="Even";
+            }else{
+                message2="Odd";
+            }
+
+            document.getElementById("result").innerHTML =
+            message1+"<br>"+message2;
+}
+        </script>
+    </body>
+</html>

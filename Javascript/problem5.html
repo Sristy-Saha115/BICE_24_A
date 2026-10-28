@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Problem 5</title>
+    </head>
+    <body>
+        <h1>Admin Login</h1>
+        <p id ="result"></p>
+        <input type ="text" id ="username" placeholder="Enter username">
+        <br><br>
+        <input type = "password" id ="password" placeholder ="Enter password">
+        <br><br>
+        <button onclick="login()">Login</button>
+        <script>
+            function login(){
+                let name = "admin";
+                let pass= "admin123";
+                if(document.getElementById("username").value==name && document.getElementById("password").value==pass){
+                    document.getElementById("result").innerHTML = "Login Successful";
+                }else{
+                     document.getElementById("result").innerHTML = "Invalid username or password";
+                }
+            }
+        </script>
+    </body>

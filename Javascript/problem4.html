@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Problem 4</title>
+    </head>
+    <body>
+        <h1>Student Result and Grade Calculator</h1>
+        <p id ="result"></p>
+        <script>
+            let name = "Mina";
+            let oopMark = 80;
+            let dbmsMark = 90;
+            let webMark = 85;
+            let total = oopMark + dbmsMark + webMark;
+            let avg = total/3;
+            let grade;
+            if (avg>=80){
+                grade = "A+";
+            }else if(avg>=70 && avg<=79){
+                    grade="A";
+                }else if(avg>=60 && avg<=69){
+                    grade="B";
+                }else if(avg>=50 && avg<=59){
+                    grade="C";
+                }else if(avg>=40 && avg<=49){
+                    grade="D";
+                }else{
+                    grade = "F";
+                }
+
+                document.getElementById("result").innerHTML =
+                "Name: "+name+"<br>"+
+                "OOP Marks: "+oopMark+"<br>"+
+                "DBMS Marks: "+dbmsMark+"<br>"+
+                "Web Marks: "+webMark+"<br>"+
+                "Total: "+total+"<br>"+
+                "Average: "+avg+"<br>"+
+                "Grade: "+grade+"<br>";
+        </script>
+    </body>
+</html>

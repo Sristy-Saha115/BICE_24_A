@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 11</title>
+    </head>
+    <body>
+        <form>
+            <label for="start">Enter start value: </label>
+            <input type="number" id="start" >
+             <label for="end">Enter end value: </label>
+            <input type="number" id="end" >
+            <button type="button"onclick="check()">Submit</button>
+        </form>
+        <p id="result"></p>
+        <script>
+            function check()
+            {
+                let s = Number(document.getElementById("start").value);
+                 let e = Number(document.getElementById("end").value);
+                 let op = " ";
+                 for(let i=s;i<=e;i++){
+                    if(i%2===0)
+                 {
+                    op=op + i +" ";
+                 }
+                 }
+
+                 document.getElementById("result").innerHTML =
+                 "Numbers divisible by 2 are: "+op;
+
+            }
+        </script>
+    </body>
+</html>

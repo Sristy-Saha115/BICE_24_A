@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Problem 6</title>
+    </head>
+    <body>
+        <h1>Age Classification System</h1>
+       
+        <input type ="number" id ="age" placeholder = "Entter your age">
+        <br><br>
+        <button onclick="classify()">Submit</button>
+        <div class="op">
+            <p>Catagory:</p>
+            <p id ="result"></p></div>
+        <script>
+            function classify(){
+                 let a = document.getElementById("age").value;
+            let b = document.getElementById("result").innerHTML;
+                if(a>=0 && a<=12){
+                   b="Child"; 
+                }else if(a>=13 && a<=19){
+                    b= "Teenager";
+                }else if(a>=20 && a<=59){
+                    b= "Adult";
+                }else if(a>=60 && a<=100){
+                    b= "Senior";
+                }else{
+                    b="Invalid Age";
+                }
+                document.getElementById("result").innerHTML=b;
+            }
+        </script>
+    </body>

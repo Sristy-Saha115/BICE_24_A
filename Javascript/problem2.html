@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Problem 2</title>
+    </head>
+    <body>
+        <h1>Online Shopping Information</h1>
+        <p id = "result"></p>
+        <script>
+            let pro1 = "Mobile";
+            let pro2 = "Laptop";
+            let pro3 = "Tablet";
+            let price1 = 20000;
+            let price2 = 70000;
+            let price3 = 40000;
+            let quan1 = 20;
+            let quan2 = 40;
+            let quan3 = 30;
+            
+            let total1 = price1*quan1;
+            let total2 = price2*quan2;
+            let total3 = price3*quan3;
+
+            let finaltotal = total1+total2+total3;
+
+            document.getElementById("result").innerHTML =
+            "Product 1: "+pro1+"<br>"+
+            "Price: "+price1+"<br>"+
+            "Quantity: "+quan1+"<br>"+
+            "Total Price of Product 1: "+total1+"<br>"+
+            "<br><br>"+
+            "Product 2: "+pro2+"<br>"+
+            "Price: "+price2+"<br>"+
+            "Quantity: "+quan2+"<br>"+
+            "Total Price of Product 2: "+total2+"<br>"+
+            "<br><br>"+
+            "Product 3: "+pro3+"<br>"+
+            "Price: "+price3+"<br>"+
+            "Quantity: "+quan3+"<br>"+
+            "Total Price of Product 3: "+total3+"<br>"+
+            
+            "<br><br>"+
+            "Final Total Price: "+finaltotal;
+
+
+        </script>
+    </body>

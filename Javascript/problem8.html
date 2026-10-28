@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem 8</title>
+    </head>
+<body>
+    <h1>Scholarship Eligibility System</h1>
+    <form>
+        <label for ="cgpa">CGPA :</label>
+        <input type="number" id="cgpa" placeholder="Enter your CGPA">
+        <label for ="attend">Attendance :</label>
+        <input type="number" id="attend" placeholder="Enter your Attendance (%)">
+        <button type="button"onclick="check()">Submit</button>
+</form>
+<p id = "result"></p>
+        <script>
+          function check(){
+            let a = document.getElementById("cgpa").value;
+            let b = document.getElementById("attend").value;
+            let message;
+            if(a>=3.75 || (a>=3.50 && b>=90)){
+                message ="Eligible";
+            }else{
+                message ="Not Eligible";
+            }
+
+document.getElementById("result").innerHTML = message;
+
+          }
+        </script>
+
+    </form>
+</body>
+</html>

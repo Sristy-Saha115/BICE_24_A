@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Problem 1</title>
+    </head>
+    <body>
+        <h1>Student Academic Information</h1>
+        <p id="result"></p>
+        <script>
+            let name = "Rahim";
+            const id =111;
+            let department = "ICE";
+            let Semester = "6th";
+            let cgpa = 2.58;
+            let message;
+            if(cgpa>=3.5){
+                message = "Good";
+            }else if(cgpa>=3.0 && cgpa<3.5){
+                message = "Average";
+            }else{
+                message="Need Improvement";
+            }
+            document.getElementById("result").innerHTML = 
+            "Name: "+name+"<br>"+
+            "ID: "+id+"<br>"+
+            "Department: "+department+"<br>"+
+            "Semester: "+Semester+"<br>"+
+            "CGPA: "+cgpa+"<br>"+
+            "Result :"+message;
+        </script>
+    </body>
+    </html>
